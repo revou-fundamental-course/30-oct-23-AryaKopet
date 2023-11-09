@@ -80,7 +80,7 @@ p {
     font-weight: 50;
     text-transform: uppercase;
     border:none;
-    background: #39A7FF;
+    background-color: #39A7FF;
     color: #fff;
     cursor: pointer;
     border-radius: 9px;
@@ -99,8 +99,8 @@ p {
     border-radius: 9px;
 }
 
-button:hover {
-    background-color: #FFC436;
+button#result-btn:hover {
+    background-color: #FFC436 !important; 
 }
 
 button:active {
