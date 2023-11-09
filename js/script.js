@@ -6,19 +6,19 @@ function hitung(){
     tinggi /= 100;
     bmi= berat / (tinggi * tinggi);
 
-    if (bmi > 27) {
-        keterangan = "Gemuk, kelebihan berat badan cuy";
-    }else if ((bmi >= 25.1) & (bmi <= 27)) {
-        keterangan = "Gemul, kelebihan berat badan tinggi rendah cuy";
-    }else if ((bmi >= 18.5) & (bmi <= 25)) {
-        keterangan = "Normal";
-    }else if ((bmi >= 17) & (bmi<=18.4)){
-        keterangan = "Kurus, kekurangan berat badan cuy";
+    if (bmi > 30) {
+        keterangan = "Kegemukan (Obesitas)";
+    }else if ((bmi >= 25.0) & (bmi <= 29.9)) {
+        keterangan = "Kelebihan berat badan";
+    }else if ((bmi >= 18.5) & (bmi <= 24.9)) {
+        keterangan = "Normal (ideal)";
+    }else if ((bmi < 18.5)){
+        keterangan = "kekurangan berat badan";
     }else {
-        keterangan = "Kurus, kekurangan berat badan cuy";
+        keterangan = "kekurangan berat badan";
     }
 
-    document.getElementById('bmi').innerHTML = "Hasil Perhitungan BMI : " + bmi.toFixed(1);
+    document.getElementById('bmi').innerHTML = "Berat Badan Lebih : " + bmi.toFixed(1);
     document.getElementById('keterangan').innerHTML = "Keterangan :" + keterangan;
 
 }

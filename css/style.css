@@ -1,5 +1,5 @@
 body {
-    margin-left:500px;
+    margin-left:50px;
 }
 
 h1 {
@@ -108,6 +108,13 @@ button:active {
     background-color: #fc8a00;
 }
 
-button:disable {
-    background-color: red;
+#bmi {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#keterangan {
+    font-size: 15px;
+    margin-top:-15px;
+    font-family: sans-serif;
 }
