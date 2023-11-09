@@ -1,0 +1,113 @@
+body {
+    margin-left:500px;
+}
+
+h1 {
+    font-family:sans-serif;
+    font-size:35px;
+}
+
+p {
+    font-size:20px;
+}
+
+.bmi-calculator {
+    max-width: 300px;
+    font-family: "Roboto", sans-serif;
+    padding: 8px 24px;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    background: #EBF3E8;
+    border-radius: 12px;
+}
+
+.bmi-calculator,
+.bmi-calculator * {
+    box-sizzing: border-box;
+}
+
+.bmi-calculator h2 {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    font-weight: 100%;
+    margin: -8px -24px;
+    margin-bottom: 8px;
+    padding: 16px;
+    border-radius: 12px 12px 0 0;
+}
+
+.bmi-calculator form h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 16px 0 10px 0;
+}
+
+.bmi-calculator form input[type="text"] {
+    width: 90%;
+    padding: 4px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #d5dbdd;
+}
+
+.bmi-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap:4px
+}
+
+.bmi-calculator form #female {
+    margin-left: 20px;
+}
+
+.bmi-calculator form .height,
+.bmi-calculator form .weight,
+.bmi-calculator form .age {
+    position: relative;
+}
+
+.bmi-calculator form .unit {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    color: #777;
+}
+
+.bmi-calculator .button-section #result-btn {
+    padding: 12px 20px;
+    margin: 5px 8px 0 0;
+    font-size: 12px;
+    font-weight: 50;
+    text-transform: uppercase;
+    border:none;
+    background: #39A7FF;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 9px;
+} 
+
+.bmi-calculator .button-section #reset-btn {
+    padding: 12px 20px;
+    margin: 0 10px 0 0;
+    font-size: 12px;
+    font-weight: 50;
+    text-transform: uppercase;
+    border:none;
+    background: #fff;
+    color: solid black;
+    cursor: pointer;
+    border-radius: 9px;
+}
+
+button:hover {
+    background-color: #FFC436;
+}
+
+button:active {
+    transform: translateY(1px);
+    background-color: #fc8a00;
+}
+
+button:disable {
+    background-color: red;
+}

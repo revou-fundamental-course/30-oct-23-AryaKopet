@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <!--Bagian judul-->
+    <div class="header">
+        <h1>Kalkulator BMI</h1>
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh menunjang 
+        <br> penampilan, berat badan juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? 
+        <br> Yuk, hitung sekarang di kalkulator BMI.
+        </p>
+    </div>
+    <!--Bagian form kalkulator-->
+    <div class="bmi-calculator">
+        <h2>Kalkulator BMI</h2>
+        <div class="controls">
+            <form action="">
+                <div class="gender">
+                    <h4>Jenis kelamin</h4>
+                    <input type="radio" id="male" value="male" name="gender" checked>
+                    <label for="male">Pria</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="female">Wanita</label>
+                </div>
+                <div class="weight">
+                    <h4 class="weight-input">Berat Badan</h4>
+                    <input type="text" id="weight-input" placeholder="0">
+                    <div class="unit">kg</div>
+                </div>
+                <div class="age">
+                    <h4>Usia (tahun)</h4>
+                    <input type="text" id="age" placeholder="0">
+                    <div class="unit">tahun</div>
+                </div>
+                <div class="height">
+                    <h4 class="height-input">Tinggi Badan (cm)</h4>
+                    <input type="text" id="height-input" placeholder="0" >
+                    <div class="unit">cm</div>
+                </div>
+                <div class="button-section">
+                    <button id="result-btn" onclick="hitung()">Hitung BMI</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <h4 id="bmi">bmi</h4>
+    <h5 id="keterangan">keterangan</h5>
+    <script src="./js/script.js"></script>
+</body>
+</html>
